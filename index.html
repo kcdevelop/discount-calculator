@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Discount Calculator</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <script type="module" src="modules/main.js"></script>
+    </head>
+    <body>
+        <h1>Discount Calculator</h1>
+        <section class="calculator">
+            <div class="screen">
+                <div class="display"></div>
+            </div>
+            <form class="pad" action="/" method="post">
+                <div class="pad-row">
+                    <div class="dollar-symbol">$</div>
+                    <div class="user-input">
+                        <input type="text" name="calc[retail-price]" data-calc="numbers" placeholder="0" value="" />
+                    </div>
+                </div>
+                <div class="pad-row">
+                    <div class="user-select">
+                        <select name="calc[percents]" data-calc="numbers">
+                            <option name="percent" value="0">
+                                &nbsp;0&thinsp;%
+                            </option>
+                            <option name="percent" value="5" selected>
+                                5&thinsp;%Off
+                            </option>
+                            <option name="percent" value="10">
+                                10&thinsp;%Off
+                            </option>
+                            <option name="percent" value="15">
+                                15&thinsp;%Off
+                            </option>
+                            <option name="percent" value="20">
+                                20&thinsp;%Off
+                            </option>
+                            <option name="percent" value="25">
+                                25&thinsp;%Off
+                            </option>
+                            <option name="percent" value="30">
+                                30&thinsp;%Off
+                            </option>
+                            <option name="percent" value="35">
+                                35&thinsp;%Off
+                            </option>
+                            <option name="percent" value="40">
+                                40&thinsp;%Off
+                            </option>
+                            <option name="percent" value="45">
+                                45&thinsp;%Off
+                            </option>
+                            <option name="percent" value="50">
+                                50&thinsp;%Off
+                            </option>
+                            <option name="percent" value=55">
+                                55&thinsp;%Off
+                            </option>
+                            <option name="percent" value="60">
+                                60&thinsp;%Off
+                            </option>
+                            <option name="percent" value=65">
+                                65&thinsp;%Off
+                            </option>
+                            <option name="percent" value="70">
+                                70&thinsp;%Off
+                            </option>
+                            <option name="percent" value=75">
+                                75&thinsp;%Off
+                            </option>
+                            <option name="percent" value="80">
+                                80&thinsp;%Off
+                            </option>
+                            <option name="percent" value=85">
+                                85&thinsp;%Off
+                            </option>
+                            <option name="percent" value="90">
+                                90&thinsp;%Off
+                            </option>
+                            <option name="percent" value=95">
+                                95&thinsp;%Off
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" name="submit" value="Calculate"/>
+            </form>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=WindSong&family=IBM+Plex+Serif:wght@300&family=Public+Sans&family=Spectral&family=Roboto:wght@100;300&display=swap');
+
+h1,
+form
+input,
+label,
+textarea {
+    padding: 0px;
+    margin: 0px;
+}
+h1,
+.pad,
+.screen,
+.pad-row,
+.user-input input,
+.user-select select {
+    width: 100%;
+}
+h1,
+.screen,
+.precent-off,
+.dollar-symbol,
+.user-input input,
+.user-select select {
+    font-family: "Roboto";
+}
+h1,
+.precent-off,
+.dollar-symbol,
+.user-input input,
+.user-select select {
+    font-size: 25px;
+}
+.display,
+.pad-row,
+.user-select select {
+    max-width: 250px;
+}
+.user-input input,
+.user-select select {
+    outline: none;
+    border: none;
+    height: 28px;
+}
+.user-input,
+.user-select,
+input::placeholder,
+.user-input input,
+.user-select select {
+    color: #000;
+}
+.user-input input,
+.user-select select {
+    background-color: rgba(255, 255, 255, 0);
+}
+.display,
+.pad-row,
+.calculator,
+[type="submit"] {
+    margin: 0px auto;
+}
+[type="submit"],
+.user-input input,
+.user-select select {
+    display: block;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.calculator {
+    border-radius: 8px 8px 50px 50px;
+    background-color: #c4c7c8;
+    border: solid 2px #000;
+    overflow: hidden;
+    height: 380px;
+    width: 290px;
+}
+.screen {
+    background-color: rgba(255, 255, 255, .95);
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: solid 2px #757c79;
+    min-height: 100px;
+    font-size: 20px;
+}
+.display {
+    padding: 20px 0px 20px;
+    color: green;
+}
+.pad {
+    margin-top: 25px;
+    height: 100%;
+}
+.pad-row {
+    border-bottom: solid 1px #000;
+    margin-bottom: 15px;
+    flex-direction: row;
+    display: flex;
+}
+.user-select select {
+    width: 48vw;
+}
+.dollar-symbol {
+    padding-left: 5px;
+    padding-right: 2px;
+    width: 12px;
+}
+.precent-off {
+    padding-left: 2px;
+}
+[type="submit"] {
+    margin-top: 8px;
+    padding: 0px 8px;
+    font-size: 18px;
+    height: 30px;
+}
+.display.error {
+    color: orangered;
+}
+[for="retail-price"].error > input,
+[for="retail-price"].error:before {
+    border-bottom: solid 2px orangered;
+}
